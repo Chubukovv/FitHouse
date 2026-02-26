@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FitHouse | Coach</title>
+    <link rel="stylesheet" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="menu">
+    
+            <h1 class="logo">FitHouse</h1>
+    
+            <button class="btn-menu">MENÚ</button>
+    
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="rutinas.html">Rutinas</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="redes.html">Redes Sociales</a></li>
+                <li><a href="coach.html">Coach</a></li>
+            </ul>
+    
+        </nav>
+    </header>
+
+<section class="coach">
+
+    <div class="coach-contenido">
+
+        <div class="coach-img">
+            <div class="foto-placeholder">
+                <img src="img/isacc.jpg" alt="Coach Isaac Sánchez">
+            </div>
+        </div>
+
+        <div class="coach-info">
+
+            <h2>ISAAC SÁNCHEZ</h2>
+            <p class="frase">Transforma tu cuerpo • Eleva tu mente</p>
+
+            <p>
+                Coach especializado en hipertrofia, pérdida de grasa y entrenamiento
+                personalizado. Mi enfoque es ayudarte a lograr resultados reales
+                con disciplina, técnica y constancia.
+            </p>
+
+            <div class="especialidades">
+                <span>Hipertrofia</span>
+                <span>Pérdida de grasa</span>
+                <span>Entrenamiento personalizado</span>
+                <span>Recomposición corporal</span>
+            </div>
+<br> <br>
+            <div class="botones-coach">
+
+                <a href="https://wa.me/50687155773" target="_blank" class="btn-coach">
+                    WhatsApp
+                </a>
+
+                <a href="https://instagram.com/sr_isacc" target="_blank" class="btn-coach ig">
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    FitHouse © 2026 Todos los derechos reservados | 
+    Desarrollado por <strong>Leonardo García Segura</strong>
+</footer>
+
+<script>
+window.addEventListener("scroll", function(){
+    document.getElementById("header").classList.toggle("abajo", window.scrollY > 50);
+});
+</script>
+
+
+<script>
+    const btn = document.querySelector(".btn-menu");
+    const lista = document.querySelector(".menu ul");
+    
+    btn.addEventListener("click", () => {
+        lista.classList.toggle("activo");
+    });
+    </script>
+</body>
+</html>

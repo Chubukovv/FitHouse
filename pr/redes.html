@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FitHouse | Redes Sociales</title>
+
+    <!-- TU RUTA CSS -->
+    <link rel="stylesheet" href="css/css.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <header id="header">
+            <nav class="menu">
+        
+                <h1 class="logo">FitHouse</h1>
+        
+                <button class="btn-menu">MENÚ</button>
+        
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="rutinas.html">Rutinas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="redes.html">Redes Sociales</a></li>
+                    <li><a href="coach.html">Coach</a></li>
+                </ul>
+        
+            </nav>
+        </header>
+
+<section class="redes">
+
+    <h2>SÍGUENOS</h2>
+    <p>Conéctate con la comunidad FitHouse y empieza tu transformación hoy.</p>
+<br> <br>
+    <div class="contenedor-redes">
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/50686820902" target="_blank" class="card-red">
+            <h3>WhatsApp</h3>
+            <span>8682 0902</span>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://instagram.com/sr_fithouse" target="_blank" class="card-red">
+            <h3>Instagram</h3>
+            <span>@sr_fithouse</span>
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    FitHouse © 2026 Todos los derechos reservados | 
+    Desarrollado por <strong>Leonardo García Segura</strong>
+</footer>
+
+<script>
+window.addEventListener("scroll", function(){
+    document.getElementById("header").classList.toggle("abajo", window.scrollY > 50);
+})
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script>
+    const btn = document.querySelector(".btn-menu");
+    const lista = document.querySelector(".menu ul");
+    
+    btn.addEventListener("click", () => {
+        lista.classList.toggle("activo");
+    });
+    </script>
+
+</body>
+</html>
